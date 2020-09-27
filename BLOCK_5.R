@@ -143,7 +143,7 @@ venn.diagram (x = list(x1 = DE_CA_Rideo,
               ext.pos = "", ext.percent = "", ext.line.lwd = "", ext.line.lty = "", description = "",  ext.dist = "", ext.length = "")
 
 dev.off()
-#are oficial gene name IDs equal to Gene stable IDs?
+
 
 
 # listMarts()
