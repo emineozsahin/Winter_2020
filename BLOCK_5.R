@@ -12,11 +12,7 @@ head(File1)
 
 DE_CA_Rideo <- rownames(File1)
 
-head (DE_CA_Rideo)
-
-length(DE_CA_Rideo) # 404
-
-length(unique(DE_CA_Rideo)) # 404
+head(DE_CA_Rideo)
 
 # Gene names find the Gene stable IDs
 # File 2: RNA-Seq ̀List of genes differentially expressed between resistant and parasite infected animals from liver tissue samples of Spanish Churra sheep.
@@ -40,10 +36,6 @@ File2_biomart <- getBM(attributes=attributes_file2, filters=filter_file2, values
 DE_SP_Churra <- File2_biomart$ensembl_gene_id[-1] # there is header don't forget
 head(DE_SP_Churra)
 
-length(DE_SP_Churra) #97
-
-length(unique(DE_SP_Churra)) #97
-
 # Gene stable IDs
 # File 3: Gene Networks   ̀Ensembl IDs for the genes associated
 # with the intestinal immune network for IgA production pathway in sheep.
@@ -53,9 +45,6 @@ File3 <- read.table("File3.txt")
 head(File3$V1)
 
 Gene_Networks_IgA <- File3$V1
-
-length(Gene_Networks_IgA) # 97
-length(unique(Gene_Networks_IgA)) #85
 
 # Cordinates
 # File 4: Genomic Regions ̀Genomic coordinates for the genes identified in a genome-wide association study (GWAS)
@@ -75,9 +64,6 @@ attributes_file4 <- c("ensembl_gene_id")
 file4_biomart <- getBM(attributes=attributes_file4, filters=filter_file4, values=values_file4, mart=mart)
 
 GWAS_CA_Rideau_IgA <- file4_biomart$ensembl_gene_id
-
-length(unique(GWAS_CA_Rideau_IgA)) #832
-length(GWAS_CA_Rideau_IgA) #832
 
 # SNPs find rs and gene stable names
 # File 5: GWAS (Genome-Wide Association Study) ̀Significant SNPs associated with immunoglobulin- A (IgA)
@@ -99,16 +85,11 @@ filter_file5 <- "chromosomal_region"
 
 attributes_file5 <- c("ensembl_gene_id")
 
-
 file5_biomart <- getBM(attributes=attributes_file5, filters=filter_file5, values=values_file5, mart=mart)
 
 GWAS_SP_Churra_IgA <- file5_biomart$ensembl_gene_id
 
 head(GWAS_SP_Churra_IgA)
-
-length(GWAS_SP_Churra_IgA)#111
-
-length(unique(GWAS_SP_Churra_IgA)) #111
 
 #Venn Diagram
 library("VennDiagram")
