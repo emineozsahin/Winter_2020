@@ -2,7 +2,7 @@
 #**********************************************************#
 
 #BINF 6970 Midterm
-#By: Emine Ozsahin (1104289)
+#By: Emine Ozsahin
 #Date: Feb 27, 2020 - Feb 28, 2020
 
 #**********************************************************#
@@ -637,14 +637,3 @@ length(y_val) #58
 x_val<- Auto[test.index_Auto, ]
 length(x_val) #58
 
-# ++++++++++++++  I`ll solve later +++++++++++++++++++
-
-pr_poly <- predict(Model_best, newx = Auto[test.index_Auto, ]) #?????????????????????????????????????????????????
-
-length(pr_poly) ####Whyyyyyyyyyy
-
-#mse(pr_poly, y_val) #???????????????
-
-length(Auto$mpg[test.index_Auto])
-
-#++++++++++++++++++++++++++++++++++++++++++++++++++++
