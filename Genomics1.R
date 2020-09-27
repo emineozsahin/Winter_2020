@@ -25,7 +25,7 @@ N50 <- function(filename){
 # 14,547,261,565  # 14,547,261,565
 #2-	How many scaffolds are included?  Are there both chromosomes and scaffolds?
 # egrep "^[>+ ]" GCA_900519105.1_iwgsc_refseqv1.0_genomic.fna | wc -l
-# 22 # There are just 22 chromosomes
+# 22 # There are 22 chromosomes
 # 3-	What is the average scaffold/chromosome length?  Plot scaffold length from largest to smallest.
 # awk '/^>/ {if (seqlen) {print seqlen}; printf $0"\t"; seqlen=0;next; }{ seqlen += length($0)}END{print seqlen}' GCA_900519105.1_iwgsc_refseqv1.0_genomic.fna > wheat_chromosome.txt
 
