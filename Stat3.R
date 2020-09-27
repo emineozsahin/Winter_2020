@@ -1,12 +1,6 @@
 ##=========================================================*
 #**********************************************************#
-
-## BINF 6970 Assignment 3
-## By: Emine Ozsahin (1104289), 
-##     Pasha Talebi Charmchi (1100889), and 
-##     Rami Baghdan (1116137)
-## Due Friday, March 25, 11:59 pm
-
+## By: Emine Ozsahin 
 #**********************************************************#
 ##=========================================================*
 #loading the libraries ----
@@ -28,7 +22,6 @@ library(tidyverse)
 #Consider the data on bulls in data_1.csv. 
 #Utilizing the seven variables (Yr Hgt, FtFrBody, PrctFFB, Frame, BkFat, SaleHt, and Sale Wt) 
 #to perform a principal component analysis using the covariance matrix S and the correlation matrix R. 
-#Your analysis should include the following:
 
 # Variables are defined as follows:
 # Col. 1: Breed (1 = Angus, 5 = Hereford, 8 = Simental)
